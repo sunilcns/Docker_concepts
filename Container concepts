@@ -1,0 +1,31 @@
+Virtual machines first
+
+With virtualization, a hypervisor (like VMware or Microsoft’s Hyper-V) lets one physical server run multiple virtual machines (VMs).
+
+Each VM includes:
+
+its own guest operating system
+libraries
+application code
+
+That was a huge improvement over “one server = one app,” because it improved isolation and hardware utilization.
+
+The limitation of VMs
+
+VMs are still relatively heavy because every VM carries a full OS.
+
+That means:
+
+slower startup (often tens of seconds to minutes)
+more RAM and disk usage
+more overhead when scaling lots of small services
+Why containers appeared
+
+Containers (for example with Docker) package the application plus its dependencies, but share the host OS kernel instead of each carrying a separate OS.
+
+So containers are:
+
+much lighter
+start very fast (often seconds or less)
+easier to scale up/down
+ideal for microservices and CI/CD pipelines
