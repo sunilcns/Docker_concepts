@@ -136,6 +136,12 @@ Use Cases
 *   Microservices architecture
 *   CI/CD pipelines
 *   Cloud-native applications
+
+  Write a docker files and submit to docker engine ( platform ). this will convert into image . again using commands image can be converted to a container. 
+Lifecycle of Docker -> 
+1. Write a docker file. 
+2. Execute the file to create image. 
+3. Execute the image to create a container 
     
 Conclusion
 -------------
