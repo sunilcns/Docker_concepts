@@ -1,3 +1,12 @@
+| Feature      | Containers | VMs             |
+| ------------ | ---------- | --------------- |
+| OS           | Shared     | Separate        |
+| Startup time | Seconds    | Minutes         |
+| Size         | MBs        | GBs             |
+| Isolation    | Medium     | Strong          |
+| Performance  | High       | Slight overhead |
+
+
 Virtual machines first
 
 With virtualization, a hypervisor (like VMware or Microsoft’s Hyper-V) lets one physical server run multiple virtual machines (VMs).
