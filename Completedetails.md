@@ -72,7 +72,8 @@ Docker is a containerization platform that provides easy way to containerize you
 In simple words, you can understand as containerization is a concept or technology and Docker Implements Containerization.
 
 Docker Architecture ?
-image
+<img width="1066" height="577" alt="image" src="https://github.com/user-attachments/assets/4f4c556f-7d22-4033-9a55-371760219076" />
+
 
 The above picture, clearly indicates that Docker Deamon is brain of Docker. If Docker Deamon is killed, stops working for some reasons, Docker is brain dead :p (sarcasm intended).
 
@@ -84,7 +85,7 @@ There are three important things,
 docker build -> builds docker images from Dockerfile
 docker run -> runs container from docker images
 docker push -> push the container image to public/private regestries to share the docker images.
-Screenshot 2023-02-08 at 4 32 13 PM
+<img width="1041" height="270" alt="image" src="https://github.com/user-attachments/assets/23f895b6-61d6-4423-bb90-66bcf0b208b9" />
 
 Understanding the terminology (Inspired from Docker Docs)
 Docker daemon
