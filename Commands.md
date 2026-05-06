@@ -125,3 +125,55 @@ Sometimes the image will be used by a container. even though container is stoppe
  docker ps -a
  docker image ls
  docker image rm 2c97e18eadb1
+
+
+
+ --------------------------------------------------------------------------------------------------------------------------------
+Sample example :
+
+ 1. Create a folder
+    mkdir docker-demo
+    cd docker-demo
+    
+3. Create a file app.py
+   from http.server import SimpleHTTPRequestHandler, HTTPServer
+
+   PORT = 8000
+   
+   class Handler(SimpleHTTPRequestHandler):
+       def do_GET(self):
+           self.send_response(200)
+           self.end_headers()
+           self.wfile.write(b"Hello Sunil! Your first Docker app is running.")
+   
+   with HTTPServer(("", PORT), Handler) as httpd:
+       print(f"Serving on port {PORT}")
+       httpd.serve_forever()
+   
+4. Create a file Dockerfile
+    FROM python:3.10-slim
+    WORKDIR /app
+    COPY app.py .
+    EXPOSE 8000
+    CMD ["python", "app.py"]
+
+5. Build Docker image
+    docker build -t my-first-app .
+   
+7. Run container
+    docker run -d -p 8000:8000 my-first-app
+   NOTE: -p 8001:8000 (Port Mapping)
+   <host_port>:<container_port>
+   | Side               | Port |
+   | ------------------ | ---- |
+   | Host (your laptop) | 8001 |
+   | Container          | 8000 |
+
+Browser → localhost:8001 → Docker → Container:8000 → Your app. Your Python app is running on port 8000 inside container,
+but you access it via 8001 on your machine
+   
+9. Open browser
+    http://localhost:8000
+
+
+
