@@ -18,6 +18,7 @@ create production-ready containers
 
 **Single-Stage Build
 **
+
 In a single-stage build, everything remains inside one image:
 
 build tools
