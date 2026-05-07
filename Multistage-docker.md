@@ -14,6 +14,13 @@ reduce image size
 improve security
 create production-ready containers
 
+
+
+<img width="1043" height="362" alt="image" src="https://github.com/user-attachments/assets/0680b1d1-72ac-4150-bd1b-2fa050ffc3fa" />
+
+
+<img width="1012" height="457" alt="image" src="https://github.com/user-attachments/assets/8b9684aa-5050-4147-b158-133c747c31e7" />
+
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 **Single-Stage Build
